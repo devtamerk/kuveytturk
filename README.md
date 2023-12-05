@@ -1,5 +1,7 @@
 # Kuveyt SanalPOS Entegrasyonu
 
+<a class="bmc-button" target="_blank" href="https://www.buymeacoffee.com/tamerkirci"><img src="https://cdn.buymeacoffee.com/buttons/bmc-new-btn-logo.svg" alt="Buy me a coffee 😇"><span style="margin-left:5px;font-size:19px !important;">Buy me a coffee 😇</span></a>
+
 Bu proje, Kuveyt Türk Bankası'nın SanalPOS ödeme sistemini entegre etmek için kullanılan PHP sınıfını içerir.
 
 ## Kullanım
