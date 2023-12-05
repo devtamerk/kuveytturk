@@ -28,7 +28,6 @@ class Kuveyt
         try {
             
             $order_no            = time();
-
             $okUrl               = '';
             $failUrl             = '';
             
@@ -41,10 +40,10 @@ class Kuveyt
             $Amount              = (float) str_replace([','], [''], $amount) * 100; 
             $card_installment    = $installment;
 
-            $CustomerId          = $boa_customer_id;
-            $MerchantId          = $boa_merchant_id;
-            $UserName            = $boa_classic_name;
-            $Password            = $boa_classic_password;
+            $CustomerId          = $this->boa_customer_id;
+            $MerchantId          = $this->boa_merchant_id;
+            $UserName            = $this->boa_classic_name;
+            $Password            = $this->boa_classic_password;
 
             $HashData            = self::createHash($Password,$MerchantId,$MerchantOrderId,$Amount,$okUrl,$failUrl,$UserName);
             
@@ -79,11 +78,11 @@ class Kuveyt
             curl_setopt($ch, CURLOPT_SSLVERSION, 6);
             curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
             curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-type: application/xml', 'Content-length: '. strlen($xml)) );
-            curl_setopt($ch, CURLOPT_POST, true); //POST Metodu kullanarak verileri g�nder  
-            curl_setopt($ch, CURLOPT_HEADER, false); //Serverdan gelen Header bilgilerini �nemseme.  
-            curl_setopt($ch, CURLOPT_URL,$url); //Baglanacagi URL  
+            curl_setopt($ch, CURLOPT_POST, true);
+            curl_setopt($ch, CURLOPT_HEADER, false); 
+            curl_setopt($ch, CURLOPT_URL,$url);
             curl_setopt($ch, CURLOPT_POSTFIELDS, $xml);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); //Transfer sonu�larini al.
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); 
             $data = curl_exec($ch);  
             curl_close($ch);
 
