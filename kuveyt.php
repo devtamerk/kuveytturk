@@ -18,14 +18,14 @@ class Kuveyt
 
     public static function createHash($Password,$MerchantId, $MerchantOrderId, $Amount, $OkUrl, $FailUrl, $UserName)
     {
-        $HashedPassword = base64_encode(sha1($Password,"ISO-8859-9")); //md5($Password);    
+        $HashedPassword = base64_encode(sha1($Password,"ISO-8859-9"));
         $HashData       = base64_encode(sha1($MerchantId.$MerchantOrderId.$Amount.$OkUrl.$FailUrl.$UserName.$HashedPassword , "ISO-8859-9"));
         return $HashData;
     }
 
     public static function pay($card_name, $card_number, $card_month, $card_year, $card_cvv, $amount,$installment) 
     {
-        try {
+        try { 
             
             $order_no            = time();
             $okUrl               = '';
