@@ -29,11 +29,4 @@ Bu proje, Kuveyt Türk Bankası'nın SanalPOS ödeme sistemini entegre etmek iç
 
 ## Dikkat
 
-Bu proje, Kuveyt Türk Bankası'nın SanalPOS servisini kullanır. Güvenlik ve lisans sorumluluklarına dikkat edin. Bu kodu kullanmadan önce Kuveyt Türk Bankası API belgelerini kontrol edin.
-
-## Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır.
-
-
-Bu açıklama, projenin temel kullanım adımlarını ve dikkat edilmesi gereken önemli noktaları içerir. Ayrıca, projenin lisansı ve gereksinimleriyle ilgili bilgiler içerir. Gerçek projenize uyarlamadan önce gerekli düzenlemeleri yapmayı unutmayın.
+Bu proje, Kuveyt Türk Bankası'nın SanalPOS servisini kullanır. Güvenlik ve lisans sorumluluklarına dikkat edin. Bu kodu kullanmadan önce <a  target="_blank" href="https://developer.kuveytturk.com.tr/docs"> Kuveyt Türk Bankası API belgelerini </a> kontrol edin.
